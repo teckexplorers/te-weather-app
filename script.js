@@ -71,7 +71,7 @@ function getCurrentDate() {
 
 
 async function getFetchData(endPoint, city) {
-    const apiURL = `https://api.weather.teckexplorers.com/?city=${encodeURIComponent(city)}&endpoint=${endPoint}`;
+    const apiURL = `https://weather-api.teckexplorers.com/?city=${encodeURIComponent(city)}&endpoint=${endPoint}`;
 
     try {
         const response = await fetch(apiURL);
